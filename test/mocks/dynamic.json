@@ -1,0 +1,17 @@
+{
+  "name": "dynamic_segment",
+  "ruleset": [
+    {
+      "rule_name": "rule_0",
+      "condition_test": "RANGE",
+      "value_minimum": "dynamic_interest_rate_min",
+      "value_minimum_type": "variable",
+      "value_maximum": "dynamic_interest_rate_max",
+      "value_maximum_type": "variable",
+      "variable_name": "calculated_interest_rate",
+      "condition_output": {
+        "decline_reason": "Interest Rate Out Of Range"
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "complex_segment",
+  "ruleset": [
+    {
+      "rule_name": "rule_0",
+      "condition_test": "EQUAL",
+      "value_comparison": true,
+      "rule_type": "AND",
+      "value_comparison_type": "value",
+      "variable_name": "is_employed",
+      "condition_output": {
+        "decline_reason": "Failed Preliminary Requirements"
+      }
+    },
+    {
+      "rule_name": "rule_0",
+      "rule_type": "AND",
+      "condition_test": "RANGE",
+      "value_minimum": 24,
+      "value_minimum_type": "value",
+      "value_maximum": 65,
+      "value_maximum_type": "value",
+      "variable_name": "age",
+      "condition_output": {
+        "decline_reason": "Failed Preliminary Requirements"
+      }
+    },
+    {
+      "rule_name": "rule_1",
+      "rule_type": "OR",
+      "condition_test": "FLOOR",
+      "value_comparison_type": "value",
+      "value_comparison": 65000,
+      "variable_name": "annual_income",
+      "condition_output": {
+        "decline_reason": "Failed Financial Check"
+      }
+    },
+    {
+      "rule_name": "rule_1",
+      "rule_type": "OR",
+      "condition_test": "RANGE",
+      "value_minimum": 730,
+      "value_minimum_type": "value",
+      "value_maximum": 850,
+      "value_maximum_type": "value",
+      "variable_name": "fico_score",
+      "condition_output": {
+        "decline_reason": "Failed Financial Check"
+      }
+    },
+    {
+      "rule_name": "rule_1",
+      "rule_type": "OR",
+      "condition_test": "FLOOR",
+      "value_comparison_type": "value",
+      "value_comparison": 40000,
+      "variable_name": "checking_account_balance",
+      "condition_output": {
+        "decline_reason": "Failed Financial Check"
+      }
+    },
+    {
+      "rule_name": "rule_2",
+      "condition_test": "RANGE",
+      "value_minimum": "2018-06-01T00:00:00.000Z",
+      "value_minimum_type": "value",
+      "value_maximum": "2018-08-30T00:00:00.000Z",
+      "value_maximum_type": "value",
+      "variable_name": "move_in_date",
+      "condition_output": {
+        "decline_reason": "No units available at the specified move in date"
+      }
+    }
+  ]
+}
