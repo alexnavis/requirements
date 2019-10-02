@@ -1,6 +1,6 @@
 {
   "name": "@digifi-los/requirements",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "dynamic minimum requirements evaluation module",
   "main": "index.js",
   "scripts": {
